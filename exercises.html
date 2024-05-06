@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Physique Exercises</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercises.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            navLinks.style.display = "none";
+        }
+     </script>
+</head>
+<body>
+    <section class="header">
+        <video autoplay muted loop id="header-video">
+            <source src="fly.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <nav>
+            <a href="logo_qr.png"><img src="logo.main.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#train">TRAINING</a></li>
+                    <li><a href="index.html#bout">ABOUT</a></li>
+                    <li><a href="creator.html#con">CONTACT</a></li>
+                    <li><a href="creator.html#own">CREATOR</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 style="margin-left: 15%;">Peak Physique </h1>
+            <br>
+            <h1 style="margin-left: 25%;">Exercises</h1>  </div>  
+        </section>
+     <!---Chest & Tricep-->
+    <section id="chest">
+        <div class="head">
+            <h1 style="margin-top: 1%;">Chest & Tricep Exercises</h1>
+        </div>
+        <div class="content1">
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="bench.png" alt="Chest Press">
+                <h2>Barbell Bench Press</h2>
+                <p>Reps: 10-12</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>The barbell bench press is a fundamental chest exercise that targets the pectoralis major, anterior deltoids, and triceps.</p>
+                    <p>It involves lying on a flat bench and pressing a weighted barbell upwards, then lowering it to the chest before pushing it back up.</p>
+                    <a href="https://drive.google.com/file/d/1pGEUi7csB8CItt9igwoFHCrkdVAS8n08/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="dum_fly.png" alt="Tricep Dips">
+                <h2>Dumbbell Flyes</h2>
+                <p>Reps: 8-10</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Dumbbell flyes isolate the chest muscles and are great for enhancing chest definition. </p>
+                    <p>They are performed by lying on a flat bench with dumbbells in hand, arms extended above the chest, and then lowering the weights out to the sides in a wide arc motion before returning to the starting position.</p>
+                    <a href="https://drive.google.com/file/d/1o40B4n00FZdpkU0YXxln6xKJPs072d7i/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="incline.png" alt="Chest Press">
+                <h2>Incline Bench Press</h2>
+                <p>Reps: 10-12</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p> Incline bench press targets the upper chest muscles and shoulders. It is performed similarly to the flat bench press, but with the bench set to an incline (usually around 30-45 degrees).</p>
+                    <p>This variation places more emphasis on the clavicular portion of the pectoralis major.</p>
+                    <a href="https://drive.google.com/file/d/1QNonnc-hf1jPlDJQ42t9TXfPUbTxI_el/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="push-up.png" alt="Tricep Dips">
+                <h2>Push-Ups</h2>
+                <p>Reps: 8-10</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Push-ups are a versatile bodyweight exercise that targets the chest, shoulders, and triceps. </p>
+                    <p>They can be performed anywhere and require no equipment. Start in a plank position, lower your body until your chest nearly touches the ground, then push back up to the starting position.</p>
+                    <a href="https://drive.google.com/file/d/1tgqDrAoYAIZRbUmE7yW2NkiQVX_yUZ9C/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>    
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="rope_down.png" alt="Chest Press">
+                <h2>Tricep Rope Pushdowns</h2>
+                <p>Reps: 10-12</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Tricep rope pushdowns are a cable machine exercise that isolates the triceps. Stand facing the cable machine with a rope attachment overhead.</p>
+                    <p>Grip the rope with both hands, keep elbows close to your sides, and push the rope down until arms are fully extended, then return to the starting position.</p>
+                    <a href="https://drive.google.com/file/d/1Ld9PFLna0jcd14yuEP2HnUwySGOe1y9N/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>  
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="dips.png" alt="Tricep Dips">
+                <h2>Tricep Dips</h2>
+                <p>Reps: 8-10</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Tricep dips are a bodyweight exercise that effectively target the triceps.</p>
+                    <p>They involve lowering and raising the body by bending and straightening the arms.</p>
+                    <a href="https://drive.google.com/file/d/1bc2Jqt58K_5dmFRAlrG7aUll8X5Ub0gl/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="over_head.png" alt="Chest Press">
+                <h2>Overhead Tricep Extensions</h2>
+                <p>Reps: 10-12</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Overhead tricep extensions target the long head of the triceps and also engage the shoulders. They can be performed standing or seated with a dumbbell or a barbell held overhead.</p>
+                    <p>Lower the weight behind your head by bending your elbows, then extend your arms to raise it back up.</p>
+                    <a href="https://drive.google.com/file/d/1hHQRjApfHfArS3uCh5cF32kdSKi6uGIP/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="bench.png" alt="Tricep Dips">
+                <h2>Close-Grip Bench Press</h2>
+                <p>Reps: 8-10</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Close-grip bench press is a variation of the traditional bench press that places more emphasis on the triceps. </p>
+                    <p> Grip the barbell with hands closer together than shoulder-width apart. Lower the barbell to your chest, keeping elbows close to your body, then press it back up to the starting position.</p>
+                    <a href="https://drive.google.com/file/d/1HGyH2fCJtsh7akt0KOrx5Hw9Yqjw9Mra/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleDescription(element) {
+                var description = element.querySelector('.description');
+                description.style.display = description.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
+    </section>
+    <!---back bicep-->
+    <section id="back">
+        <div class="head">
+            <h1 style="margin-top: 1%;">Back & Bicep Exercises</h1>
+        </div>
+        <div class="content1">
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="pull_ups.png" alt="Chest Press">
+                <h2>Pull-Ups</h2>
+                <p>Reps: 10-12</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Pull-ups are a classic bodyweight exercise that targets the back muscles, primarily the latissimus dorsi. </p>
+                    <p>Hang from a pull-up bar with an overhand grip, then pull your body up until your chin clears the bar, and lower yourself back down with control.</p>
+                    <a href="https://drive.google.com/file/d/1J2E1RNJyTyNasG2sJXcWdV52KWoo4iiY/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="deadlift.png" alt="Tricep Dips">
+                <h2>Barbell Deadlift</h2>
+                <p>Reps: 8-10</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>The barbell deadlift is a compound exercise that engages multiple muscles, including the back, glutes, and hamstrings. </p>
+                    <p>Start with the barbell on the ground, bend at the hips and knees to grasp the bar, then stand up straight, lifting the barbell until hips and knees are fully extended.</p>
+                    <a href="https://drive.google.com/file/d/1c_HGB6mHgpXIDMWm3tylEBlZTHBQ8anz/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="row.png" alt="Chest Press">
+                <h2>Dumbbell Rows</h2>
+                <p>Reps: 10-12</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Dumbbell rows target the middle and upper back muscles, as well as the biceps.</p>
+                    <p>Stand with a dumbbell in each hand, hinge forward at the hips, keeping your back straight, then pull the dumbbells towards your torso, squeezing your shoulder blades together, before lowering them back down.</p>
+                    <a href="https://drive.google.com/file/d/1v59iPBpNhZEwJp20s90NuBDGfYsNp7xN/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="lat_down.png" alt="Tricep Dips">
+                <h2>Lat Pulldowns</h2>
+                <p>Reps: 8-10</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Lat pulldowns are performed on a cable machine and primarily target the latissimus dorsi muscles. </p>
+                    <p>Sit at a lat pulldown machine, grasp the bar with a wide overhand grip, then pull the bar down towards your chest while keeping your back straight, and slowly release it back up.</p>
+                    <a href="https://drive.google.com/file/d/1oO_4eohhGqlr_f-XPZCLuO2z7sHMlgSR/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="r9.jpg" alt="Chest Press">
+                <h2>Barbell Bicep Curls</h2>
+                <p>Reps: 10-12</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Barbell bicep curls are a staple bicep exercise that isolates the biceps brachii. Stand with a barbell in hand, palms facing up, then curl the barbell towards your shoulders while keeping your upper arms stationary. </p>
+                    <p>Lower the barbell back down with control.</p>
+                    <a href="hammer.mp4" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="hammer.png" alt="Tricep Dips">
+                <h2>Dumbbell Hammer Curls</h2>
+                <p>Reps: 8-10</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Dumbbell hammer curls target the biceps brachii and brachialis muscles. Stand with a dumbbell in each hand, palms facing inwards towards your body, then curl the dumbbells towards your shoulders while keeping your elbows close to your sides. </p>
+                    <p> Lower the dumbbells back down with control.</p>
+                    <a href="https://drive.google.com/file/d/1Hu916xip3a7xLz6K0BS8JaW6w8UXZj0J/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="preach.png" alt="Chest Press">
+                <h2>Preacher Curls</h2>
+                <p>Reps: 10-12</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Preacher curls are performed on a preacher bench and isolate the biceps. Sit or stand at a preacher bench with your upper arms resting on the pad, then curl a barbell or dumbbells upwards towards your shoulders, focusing on squeezing the biceps at the top of the movement.</p>
+                    <a href="https://drive.google.com/file/d/1vtb3m_OGmk8IrQRMV3En5RsghsBCv7pZ/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+            <div class="exercise" onclick="toggleDescription(this)">
+                <img src="concen.png" alt="Tricep Dips">
+                <h2>Concentration Curls</h2>
+                <p>Reps: 8-10</p>
+                <p>Sets: 3</p>
+                <div class="description">
+                    <p>Concentration curls target the biceps brachii and help improve bicep peak. Sit on a bench with legs spread apart, grasp a dumbbell with one hand, and place the back of your upper arm against your inner thigh. Curl the dumbbell towards your shoulder, then lower it back down. Repeat on both arms.</p>
+                    <a href="https://drive.google.com/file/d/1zXrP54RA9u3AfEoW_uI-dzJUAiwOYtvv/view?usp=sharing" style="text-decoration: none;">
+                        <p>See Video</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function toggleDescription(element) {
+                var description = element.querySelector('.description');
+                description.style.display = description.style.display === 'none' ? 'block' : 'none';
+            }
+        </script>
+    </section>
+    <!--Legs-->
+        <section id="leg">
+            <div class="head">
+                <h1 style="margin-top: 1%;">LEG DAY</h1>
+            </div>
+            <div class="content1">
+                <div class="exercise" onclick="toggleDescription(this)">
+                    <img src="squat.png" alt="Chest Press">
+                    <h2>Squats</h2>
+                    <p>Reps: 10-12</p>
+                    <p>Sets: 3</p>
+                    <div class="description">
+                        <p>Squats are a compound exercise that primarily targets the quadriceps, hamstrings, and glutes. They involve bending your knees and hips while lowering your body toward the ground as if you're sitting back into a chair, then returning to a standing position. </p>
+                        <a href="https://drive.google.com/file/d/1HavdQZZ7Qhl-bsCd_RqqOySsYoWqb-sq/view?usp=sharing" style="text-decoration: none;">
+                            <p>See Video</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="exercise" onclick="toggleDescription(this)">
+                    <img src="leg.jpg" alt="Tricep Dips">
+                    <h2>Lunges</h2>
+                    <p>Reps: 8-10</p>
+                    <p>Sets: 3</p>
+                    <div class="description">
+                        <p> Lunges are another compound exercise that targets the quadriceps, hamstrings, and glutes, as well as the calves and core. They involve stepping forward with one leg, lowering your body until both knees are bent at a 90-degree angle, then pushing back up to the starting position.</p>
+                        <a href="https://drive.google.com/file/d/1jSPIXwNUnA3HqdkNYCQaGAnB9XgwDMj2/view?usp=sharing" style="text-decoration: none;">
+                            <p>See Video</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="exercise" onclick="toggleDescription(this)">
+                    <img src="deadlift.png" alt="Chest Press">
+                    <h2>Deadlifts</h2>
+                    <p>Reps: 10-12</p>
+                    <p>Sets: 3</p>
+                    <div class="description">
+                        <p>Deadlifts primarily target the hamstrings, glutes, and lower back. They involve lifting a weighted barbell or dumbbells from the ground to a standing position while maintaining a straight back and bending at the hips and knees.</p>
+                        <a href="https://drive.google.com/file/d/1c_HGB6mHgpXIDMWm3tylEBlZTHBQ8anz/view?usp=sharing" style="text-decoration: none;">
+                            <p>See Video</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="exercise" onclick="toggleDescription(this)">
+                    <img src="press.png" alt="Tricep Dips">
+                    <h2>Leg Press</h2>
+                    <p>Reps: 8-10</p>
+                    <p>Sets: 3</p>
+                    <div class="description">
+                        <p>The leg press machine is a compound exercise that targets the quadriceps, hamstrings, and glutes. It involves pushing a weighted platform away from your body using your legs while seated in a reclined position, then returning to the starting position. </p>
+                        <a href="https://drive.google.com/file/d/1D5-yT0ppWfc8dwg0mte9qhvCy_F2dDqO/view?usp=sharing" style="text-decoration: none;">
+                            <p>See Video</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+<!--------footer-->
+<section class="footer">
+    Copyright &copy; 2020 Peak Physique 
+    Peak Physique - Gym of the Primordials - 
+    <div class="icon">
+        <a href="https://www.facebook.com/share/jwHLtFYepXpuN5a2/?mibextid=qi2Omg"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/R_Jin0430"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/jin_leahh/"><i class="fa fa-instagram"></i></a>
+        <a href="mailto:jerby52153@gmail.com" style="color: black;"><i class="fa fa-gmail"></i></a>
+       </div>
+    <p>Creator : Jerby John A Calixto</p>
+ </section>
+</body>
+</html>

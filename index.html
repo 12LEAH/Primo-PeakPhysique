@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Physique</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <section class="header">
+    <nav>
+        <a href="logo_qr.png"><img src="logo.main.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="exercises.html">TRAINING</a></li>
+                <li><a href="#bout">ABOUT</a></li>
+                <li><a href="creator.html#con">CONTACT</a></li>
+                <li><a href="creator.html#own">CREATOR</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars"onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>Peak Physique Gym</h1>
+        <p>At Peak Physique, we're dedicated to helping you reach new heights in your fitness journey.<br> Our state-of-the-art facilities, expert trainers, and diverse range of classes cater to all fitness levels and goals.<br> "NO PAIN NO GAIN"</p>
+        <a href="reg.html"  class="reg" >REGISTER</a>
+    </div>  
+ </section>
+ 
+ <!--Training-->
+ <section class="training" id="train">
+    <h1>Training Course</h1>
+    <div class="row">
+        <a href="exercises.html#chest" style="text-decoration: none;">
+            <div class="train-col">
+                <h3 style="color: white;">Chest and Tricep Exercises </h3>
+                <p>Chest and tricep exercises are fundamental for developing a well-rounded upper body. They primarily target the pectoral muscles in the chest and the triceps brachii muscles on the back of the upper arm.Tricep exercises typically involve extensions, such as tricep dips, tricep pushdowns, skull crushers, and overhead tricep extensions. </p>
+            </div>
+        </a>
+        <a href="exercises.html#back" style="text-decoration: none;">
+            <div class="train-col">
+                <h3 style="color: white;">Back and Bicep Exercises</h3>
+                <p>Back and bicep exercises are essential for building a strong upper body. They target muscles in the back such as the latissimus dorsi, rhomboids, and traps, as well as the biceps in the front of the upper arm.</p>
+            </div>
+        </a>
+        <a href="exercises.html#leg" style="text-decoration: none;">
+            <div class="train-col">
+                <h3 style="color: white;">Leg Exercises</h3>
+                <p>Leg exercises are vital for building lower body strength, stability, and overall athleticism. They target major muscle groups like quadriceps, hamstrings, glutes, and calves. Common leg exercises include squats, lunges, deadlifts, leg press, calf raises, and hamstring curls. </p>
+            </div>
+        </a>
+    </div>
+</section>
+<!----About us-->
+<section class="about" id="bout">
+    <h1>About Us</h1>
+    <p>Welcome to Peak Physique, where we're dedicated to helping you rediscover your primal strength and vitality. Our expert trainers and supportive community are here to guide you on your journey to achieving your peak physique. With personalized programs tailored to your goals, we're committed to helping you unleash your full potential and achieve lasting results. Join us and experience the transformation firsthand! 💪🌟 #PeakPhysique #PrimalStrength #AchieveYourPeak</p>
+    <div class="row0" id="row0">
+        <div class="about-col1">
+            <img src="gm.jpg" alt="">
+            <div class="layer">
+                <h3>Gym </h3><a href="#info_1"><button class="btn1" onclick="showInfo_1()">Gym</button></a>
+            </div>
+        </div>
+        <script>
+            function showInfo_1() {
+                var info_1Element = document.getElementById("info_1");
+                var info_galElement = document.getElementById("info_gal");
+                var info_2Element = document.getElementById("info_2");
+                var info_picElement = document.querySelector(".info_pic");
+                var info_3Element = document.getElementById("info_3");
+                var info_sup1Element = document.querySelector(".info_sup1");
+                var info_sup2Element = document.querySelector(".info_sup2");
+                var info_sup3Element = document.querySelector(".info_sup3");
+                if (info_1Element.style.display === "block" && info_galElement.style.display === "block") {
+                    info_1Element.style.display = "none";
+                    info_galElement.style.display = "none";
+                } else {
+                    info_1Element.style.display = "block";
+                    info_galElement.style.display = "block";
+                    document.getElementById("p1").style.fontFamily = "Arial";
+                    info_2Element.style.display = "none";
+                    info_picElement.style.display = "none";
+                    info_3Element.style.display = "none";
+                    info_sup1Element.style.display = "none";
+                    info_sup2Element.style.display = "none";
+                    info_sup3Element.style.display = "none";
+                }
+            }
+        </script>
+
+        <div class="about-col2">
+            <img src="lo.png" alt="">
+            <div class="layer">
+                <h3>Location</h3><a href="#info_2"><button class="btn2" onclick="showInfo_2()">Location</button></a>
+            </div>
+        </div>
+        <script>
+            function showInfo_2() {
+                var info_1Element = document.getElementById("info_1");
+                var info_galElement = document.getElementById("info_gal");
+                var info_2Element = document.getElementById("info_2");
+                var info_picElement = document.querySelector(".info_pic");
+                var info_3Element = document.getElementById("info_3");
+                var info_sup1Element = document.querySelector(".info_sup1");
+                var info_sup2Element = document.querySelector(".info_sup2");
+                var info_sup3Element = document.querySelector(".info_sup3");
+                if (info_2Element.style.display === "block" && info_picElement.style.display === "block" ) {
+                    info_2Element.style.display = "none";
+                    info_picElement.style.display = "none";
+                    info_picElement.style.setProperty('align-self', 'center');
+                } else {
+                    info_2Element.style.display = "block";
+                    info_picElement.style.display = "block";
+                    info_picElement.style.setProperty('width','100%');
+                    info_picElement.style.setProperty('align-self', 'center');
+                    document.getElementById("p2").style.fontFamily = "Arial";
+                    info_1Element.style.display = "none";
+                    info_galElement.style.display = "none";
+                    info_3Element.style.display = "none";
+                    info_sup1Element.style.display = "none";
+                    info_sup2Element.style.display = "none";
+                    info_sup3Element.style.display = "none";
+                }
+            }
+        </script>
+
+        <div class="about-col3">
+            <img src="gd.png" alt="">
+            <div class="layer">
+                <h3>Supplement</h3><a href="#info_3"><button class="btn3" onclick="showInfo_3()">Supplement</button></a>
+            </div>
+        </div>
+        <script>
+            function showInfo_3() {
+                var info_1Element = document.getElementById("info_1");
+                var info_galElement = document.getElementById("info_gal");
+                var info_2Element = document.getElementById("info_2");
+                var info_picElement = document.querySelector(".info_pic");
+                var info_3Element = document.getElementById("info_3");
+                var info_sup1Element = document.querySelector(".info_sup1");
+                var info_sup2Element = document.querySelector(".info_sup2");
+                var info_sup3Element = document.querySelector(".info_sup3");
+
+                if (info_3Element.style.display === "block" && info_sup1Element.style.display === "block"&&info_sup2Element.style.display === "block"&&info_sup3Element.style.display === "block" ) {
+                    info_3Element.style.display = "none";
+                    info_sup1Element.style.display = "none";
+                    info_sup2Element.style.display = "none";
+                    info_sup3Element.style.display = "none";
+                } else {
+                    info_1Element.style.display = "none";
+                    info_galElement.style.display = "none";
+                    info_2Element.style.display = "none";
+                    info_picElement.style.display = "none";
+                    info_3Element.style.display = "block";
+                    info_sup1Element.style.display = "block";
+                    info_sup1Element.style.setProperty('margin-left','35%');
+                    info_sup1Element.style.setProperty('width','30%');
+                    info_sup2Element.style.display = "block";
+                    info_sup2Element.style.setProperty('margin-left','36%');
+                    info_sup2Element.style.setProperty('width','30%');
+                    info_sup3Element.style.display = "block";
+                    info_sup3Element.style.setProperty('margin-left','35%');
+                    info_sup3Element.style.setProperty('width','30%');
+                    info_sup3Element.style.setProperty('align-self', 'center');
+                    document.getElementById("p3_0").style.fontFamily = "Arial";
+                    document.getElementById("p3_1").style.border = "solid";
+                    document.getElementById("p3_1").style.fontFamily = "Arial";
+                    document.getElementById("p3_1").style.color = "black";
+                    document.getElementById("p3_2").style.border = "solid";
+                    document.getElementById("p3_2").style.fontFamily = "Arial";
+                    document.getElementById("p3_2").style.color = "black";
+                    document.getElementById("p3_3").style.border = "solid";
+                    document.getElementById("p3_3").style.fontFamily = "Arial";
+                    document.getElementById("p3_3").style.color = "black";
+                }
+            }
+        </script>
+    </div>
+    <!---gym info-->
+    <div class="info1" id="info_1" style="display: none;">
+        <h1>Gym</h1>
+        <p id="p1">Welcome to Peak Physique, where excellence meets cleanliness. Our gym is meticulously maintained, ensuring a pristine environment for your workouts. Here, respect is paramount – our members uphold a culture of mutual respect, creating a welcoming community where everyone can thrive.</p>
+    </div>
+    <section>
+        <div class="contents1" id="info_gal" style="display: none;">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                  <div class="col-4">
+                    <img class="gg" src="g1.jpg" style="width: 80%;">
+                  </div>
+                  <div class="col-4">
+                    <img class="gg"  src="g2.jpg" style="width: 80%;">
+                  </div>
+                  <div class="col-4">
+                    <img class="gg"  src="r1.1.jpg" style="width: 80%;">
+                  </div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-4">
+                        <img class="gg"  src="r8.jpg" style="width: 80%;">
+                      </div>
+                  <div class="col-4">
+                    <img class="gg"  src="g3.jpg" style="width: 80%;">
+                    <br>
+                    <a href="gymGallery.html"  class="bot1" >Gallery</a>  </div>
+                  <div class="col-4">
+                    <img class="gg"  src="g4.jpg" style="width: 80%;">
+                  </div>
+                </div>
+                <div class="row justify-content-around">
+                  <div class="col-4">
+                    <img class="gg"  src="g5.jpg" style="width: 80%;">
+                  </div>
+                  <div class="col-4">
+                    <img class="gg"  src="r4.jpg" style="width: 80%;">
+                  </div>
+                  <div class="col-4">
+                    <img class="gg"  src="gm.2.jpg" style="width: 80%;">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!---loc info-->
+    <div class="info2" id="info_2" style="display: none;">
+        <h1>Location</h1>
+        <p id="p2">Our gym, nestled in the heart of Baguio City at #470 Purok 4-East of Neverland, offers a convenient location for fitness enthusiasts. Situated beside the Summoner's Rift near Andrade's Love, it's easily accessible for all. Come find us and embark on your fitness journey today!</p>
+        <img class="info_pic" src="location.png" style="display: none;">
+    </div>
+    <!---sup info-->
+<div class="info3" id="info_3" style="display: none;">
+    <h1>Supplements</h1>
+    <p id="p3_0">At Peak Physique, authenticity and quality are our top priorities. Rest assured, all our supplements are genuine and certified, sourced directly from Jeiscah Protein. With us, you can trust that your nutritional needs are met with the highest standards, ensuring optimal results in your fitness journey.</p>
+    <img class="info_sup1" src="gain.png" style="display: none;">
+    <h2>Whey Gainer</h2>
+    <p id="p3_1">Whey gainer is a protein supplement designed to help individuals increase their calorie intake and gain muscle mass. It combines whey protein, carbohydrates, and sometimes fats to provide a high-calorie, nutrient-dense formula that supports muscle growth and recovery. Ideal for those looking to bulk up and add size, whey gainer is often consumed as a post-workout shake or as a convenient way to boost daily calorie intake.</p>
+    <img class="info_sup2" src="gold.png" style="display: none;">
+    <h2>Whey Gold</h2>
+    <p id="p3_2"> Whey gold refers to whey protein supplements that are considered high-quality and often undergo rigorous filtration processes to yield a product with high protein purity. Whey gold supplements typically contain whey protein isolate as the primary ingredient, ensuring a high protein content with minimal additives. These supplements are valued for their superior protein quality, fast absorption rate, and effectiveness in promoting muscle repair and growth. Whey gold supplements are popular among athletes, bodybuilders, and fitness enthusiasts seeking premium-quality protein supplementation.</p>
+    <img class="info_sup3" src="iso.png" style="display: none;">
+    <h2>Whey Isolate</h2>
+    <p id="p3_3">Whey isolate is a type of whey protein supplement that undergoes further processing to remove most of the fat and lactose, resulting in a product that is higher in protein content and lower in carbohydrates and fats compared to whey concentrate. Whey isolate is quickly absorbed by the body, making it an excellent choice for individuals seeking a fast-acting source of protein to support muscle recovery and growth. It's often favored by athletes and those with lactose intolerance due to its minimal lactose content.</p>
+</div>
+</section>
+<!---Ad-->
+<section class="ad">
+    <div>
+        <div>
+            <h1 class="ad_T" >Physique </h1>
+            <h1 class="ad_T" style="margin-left: 8%;">Achieved</h1>
+        </div>
+        <div class="ad_txt">
+                <p style="font-size: 100%;">
+                    "🎉 Celebrating our incredible past clients who've transformed their bodies and lives with us!💪<br> From setting goals to achieving them, they've shown dedication, perseverance, and a commitment to their health.It's inspiring to witness their journey towards their desired physique, and we're honored to have been a part of itevery step of the way. Here's to many more success stories and milestones ahead! <br>Keep pushing, keep striving, and keep believing in yourself. You've got this! 👊<br> #TransformationTuesday #FitnessGoals #GymSuccess"
+                    </p>
+        </div>
+    </div>
+    <div class="vide">
+        <video class="vid" width="auto%" height="50%" controls >
+        <source src="dead.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+<!----- testimony------->
+<section class="test">
+    <section class="testimony">
+        <div class="row">
+            <div class="tes-col">
+                <img src="vlad.jpg">
+                <div>
+                    <p>"Big shoutout to this gym for helping me reach my fitness goals! Their trainers and supportive environment made all the difference. Feeling stronger, healthier, and more confident than ever!" 💪🙏 #GymSuccess #Grateful #DreamPhysique
+                    </p>
+                    <h3>Vladymir Marcos</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <a href="r6.jpg"  class="know">Click Here to see his transformation</a>
+                </div>
+            </div>
+            <div class="tes-col">
+                <img src="gian.jpg">
+                <div class="">
+                    <p>
+                        "Grateful to this gym for helping me achieve my dream physique! Their expert guidance and supportive community kept me motivated every step of the way. Couldn't have done it without them!" 🙌💪 #TransformationTuesday #DreamPhysique #GymGratitude
+                    </p>
+                    <h3>Gian Tabafunda</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <a href="r5.jpg"  class="know">Click Here to see his transformation</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="tes-col">
+                <img src="soc.jpg">
+                <div>
+                    <p>"Big shoutout to this gym for helping me reach my fitness goals! Their trainers and supportive environment made all the difference. Feeling stronger, healthier, and more confident than ever!" 💪🙏 #GymSuccess #Grateful #DreamPhysique
+                    </p>
+                    <h3>Socrates Quilino</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <a href="r9.jpg"  class="know">Click Here to see his transformation</a>
+                </div>
+            </div>
+            <div class="tes-col">
+                <img src="bartom.jpg">
+                <div class="">
+                    <p>
+                        "Grateful to this gym for helping me achieve my dream physique! Their expert guidance and supportive community kept me motivated every step of the way. Couldn't have done it without them!" 🙌💪 #TransformationTuesday #DreamPhysique #GymGratitude
+                    </p>
+                    <h3>Rhindmar Bartolome</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <a href="g3.jpg"  class="know">Click Here to see his transformation</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="tes-col">
+                <img src="alfred.jpg">
+                <div>
+                    <p>"I am gay and its okay because I am at my peak #primodials"
+                    </p>
+                    <h3>Alfred Fajardo</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <a href="r8.jpg"  class="know">Click Here to see his transformation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--------footer-->
+<section class="footer">
+   Copyright &copy; 2020 Peak Physique 
+   Peak Physique - Gym of the Primordials - 
+   <div class="icon">
+    <a href="https://www.facebook.com/share/jwHLtFYepXpuN5a2/?mibextid=qi2Omg"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/R_Jin0430"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/jin_leahh/"><i class="fa fa-instagram"></i></a>
+    <a href="mailto:jerby52153@gmail.com" style="color: black;"><i class="fa fa-gmail"></i></a>
+   </div>
+   <p>Creator : Jerby John A Calixto</p>
+</section>
+ <!------JavaScript------>
+ <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+        navLinks.style.display = "block";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        navLinks.style.display = "none";
+    }
+ </script>
+</body>
+</html>

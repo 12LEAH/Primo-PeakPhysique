@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Physique Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="logo_qr.png"><img src="/logo.main.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#train">TRAINING</a></li>
+                    <li><a href="index.html#bout">ABOUT</a></li>
+                    <li><a href="creator.html#con">CONTACT</a></li>
+                    <li><a href="creator.html#own">CREATOR</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav>
+        <div class="gallery">
+            <center>
+                <div class="gal">Gallery <br><em>
+                    Always Remember To
+                        Be The Best Version of Yourself
+                </em><br>
+                    Your body can stand almost anything. It's you mind you have to convince</div>
+            </center>
+            <div class="contents">
+                <div class="pic1 "></div>
+                <div class="pic2"></div>
+                <div class="pic3"></div>
+                <div class="pic4"></div>
+                <div class="pic5"></div>
+                <div class="pic6"></div>
+                <div class="pic7"></div>
+                <div class="pic8"></div>
+                <div class="pic9"></div>
+                <div class="pic10"></div>
+          </div>
+        </div>  
+     </section>
+     <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            navLinks.style.display = "none";
+        }
+     </script>
+     <!--------footer-->
+<section class="footer">
+    Copyright &copy; 2020 Peak Physique 
+    Peak Physique - Gym of the Primordials - 
+    <div class="icon">
+        <a href="https://www.facebook.com/share/jwHLtFYepXpuN5a2/?mibextid=qi2Omg"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/R_Jin0430"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/jin_leahh/"><i class="fa fa-instagram"></i></a>
+        <a href="mailto:jerby52153@gmail.com" style="color: black;"><i class="fa fa-gmail"></i></a>
+       </div>
+    <p>Creator : Jerby John A Calixto</p>
+ </section>
+</body>
+</html>

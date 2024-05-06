@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peak Physique CEO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="logo_qr.png"><img src="logo.main.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#train">TRAINING</a></li>
+                    <li><a href="index.html#bout">ABOUT</a></li>
+                    <li><a href="creator.html#con">CONTACT</a></li>
+                    <li><a href="creator.html#own">CREATOR</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+        </nav> 
+        <div class="container">
+            <h2>Register for Gym Membership</h2>
+            <form id="registrationForm" method="post" action="submit.php" onsubmit="return validateForm()">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+        
+                <input type="submit" id="sub" value="Submit">
+                <center><a href="mailto:jerby52153@gmail.com" style="text-decoration: none;">FeedBack</a></center>
+            </form>
+        </div>
+        <script>
+        function validateForm() {
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var sub = document.getElementById("sub").value;
+            var error = "";
+
+            if (fullName === "") {
+                error += "Please enter your full name.\n";
+            }
+        
+            if (email === "") {
+                error += "Please enter your email address.\n";
+            } else if (!isValidEmail(email)) {
+                error += "Please enter a valid email address.\n";
+            }
+        
+            if (password === "") {
+                error += "Please enter a password.\n";
+            }
+        
+            if (confirmPassword === "") {
+                error += "Please confirm your password.\n";
+            } else if (password !== confirmPassword) {
+                error += "Passwords do not match.\n";
+            }
+
+            if (sub === "") {
+                error += "Please enter your subscription.\n";
+            }
+        
+            if (error !== "") {
+                alert(error);
+                return false;
+            } else {
+                alert("You have successfully registered");
+                window.location.href = "web.html";
+                return true;
+            }
+        }
+        
+        function isValidEmail(email) {
+            var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return pattern.test(email);
+        }
+        </script>
+    </section>
+     <!---contacts-->
+     <section class="contact" id="con">
+         <header class="hd">
+            <h1>Contact Information</h1>
+             </header>
+             <main class="mn">
+            <div class="contact-info">
+                <h2>Facebook</h2>
+                <p>Connect with me on Facebook:</p>
+                <a href="https://www.facebook.com/your_facebook_username">@AEJerbyAbad</a>
+            </div>
+            <div class="contact-info">
+                <h2>Instagram</h2>
+                <p>Follow me on Instagram:</p>
+                <a href="https://www.instagram.com/your_instagram_username">@jin</a>
+            </div>
+            <div class="contact-info">
+                <h2>Email</h2>
+                <p>Email me at:</p>
+                <a href="mailto:your_email@example.com">jerby52153@gmail.com</a>
+            </div>
+            <div class="contact-info">
+                <h2>Phone</h2>
+                <p>Call or text me:</p>
+                <p>+639102988663</p>
+            </div>
+             </main>
+     </section>
+     <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            navLinks.style.display = "none";
+        }
+     </script>
+     <!--------footer-->
+<section class="footer">
+    Copyright &copy; 2020 Peak Physique 
+    Peak Physique - Gym of the Primordials - 
+    <div class="icon">
+        <a href="https://www.facebook.com/share/jwHLtFYepXpuN5a2/?mibextid=qi2Omg"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/R_Jin0430"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/jin_leahh/"><i class="fa fa-instagram"></i></a>
+        <a href="mailto:jerby52153@gmail.com" style="color: black;"><i class="fa fa-gmail"></i></a>
+       </div>
+    <p>Creator : Jerby John A Calixto</p>
+ </section>
+</body>
+</html>
